@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredericka+the+Great&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Noto+Serif+Devanagari:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik+Dirt&family=Squada+One&family=Teko:wght@300..700&family=Viga&display=swap');
+/* font-family: "Poppins", serif; */
+body{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*{
+    box-sizing: border-box;
+}
+#welcome-page{
+  width: 100%;
+  padding-bottom: 40px;
+  background-image: url(../assets/images/welcome-bg.png);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    /* background-color: azure; */
+    background-image: url(../assets/images/logo.png);
+    background-position: center;
+    background-size: 150%;
+    margin-bottom: -20px;
+}
+.company-name{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(14, 105, 42);
+    margin: 0;
+}
+.tagline{
+    width: max-content;
+    background-color: rgb(14, 105, 42);
+    padding: 5px 20px;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.text-container{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.phone-img {
+    /* width: 300px; */
+    display: flex;
+    justify-content: center;
+    /* margin-top: -250px; */
+    margin: 0 auto;
+    margin-top: -20px;
+  }
+  
+  .phone-img img {
+    max-width: 100%; /* Ensures the image resizes within its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+  }
+  .get-started-btn{
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+  }
+  .intro{
+    text-align: center;
+    width: 40%;
+    margin: 0;
+    font-size: 12px;
+  }
+  .get-started-btn button{
+    width: 150px;
+    height: 30px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.418);
+    animation: pulse 1.5s infinite;
+  }
+.get-started-btn button:hover{
+    animation: none; /* Stops pulsing on hover */
+}
+@keyframes pulse {
+    0% {
+      transform: scale(0.95);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 15px rgba(255, 68, 0, 0.027);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 68, 0, 0);
+    }
+  }
