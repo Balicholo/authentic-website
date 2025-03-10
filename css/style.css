@@ -14,21 +14,21 @@ html{
 }
 #welcome-page{
   width: 100%;
-  /* height: 100vh; */
+  min-height: 100vh;
   padding-bottom: 40px;
-  background-image: url(../assets/images/welcome-bg.png);
+  background-image: url(https://i.ibb.co/ZR8qFNX6/welcome-bg.png);
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  @media (min-width:1085px) {
-    height: 100vh;
-  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .logo{
     width: 100px;
     height: 100px;
     /* background-color: azure; */
-    background-image: url(../assets/images/logo.png);
+    background-image: url(https://i.ibb.co/mrSKhYVm/logo.png);
     background-position: center;
     background-size: 150%;
     margin-bottom: -20px;
@@ -55,33 +55,43 @@ html{
     align-items: center;
     flex-direction: column;
 }
+.section-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .phone-img {
-    /* width: 300px; */
     display: flex;
     justify-content: center;
-    /* margin-top: -250px; */
     margin: 0 auto;
-    margin-top: -20px;
-  }
+    margin-bottom: -50px;
+    padding: 20px;
+    margin-top: auto;
+}
   
-  .phone-img img {
-    max-width: 100%; /* Ensures the image resizes within its container */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Optional: adds rounded corners */
-  }
-  .get-started-btn{
+.phone-img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 60vh;
+    width: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.get-started-btn{
     width: 100%;
-    margin-top: -100px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-  }
-  .intro{
+    padding-bottom: 20px;
+}
+.intro{
     text-align: center;
     width: 40%;
     margin: 0;
     font-size: 12px;
-  }
-  .get-started-btn button{
+}
+.get-started-btn button{
     width: 150px;
     height: 30px;
     border: 0;
@@ -90,7 +100,7 @@ html{
     position: relative;
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.418);
     animation: pulse 1.5s infinite;
-  }
+}
 .get-started-btn button:hover{
     animation: none; /* Stops pulsing on hover */
     background-color: transparent;
@@ -114,7 +124,7 @@ html{
 #hero-section{
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/images/hero-page.jpeg);
+    background-image: url(https://i.ibb.co/GQ1PP0vG/hero-page.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -243,11 +253,11 @@ a .name-logo {
     .nav-links.active + .contact-icons + .whatsapp-button {
         display: block;
         position: absolute;
-        top: calc(40px + 240px); /* Adjust based on your menu height */
+        top: calc(109px + 240px); /* Adjust based on your menu height */
         left: 0;
         width: 100%;
         text-align: center;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgb(0, 0, 0);
         padding: 20px;
     }
 }
@@ -373,6 +383,9 @@ a .name-logo {
     position: absolute;
     flex-wrap: wrap;
 }
+.products-icons a{
+    text-decoration: none;
+}
 .first{
     @media (min-width: 941px) {
         border-top-left-radius: 10px;
@@ -454,7 +467,7 @@ a .name-logo {
   }
   .about-wrapper{
     padding: 200px 0 100px;
-    background-image: url(../assets/images/about\ section.png);
+    background-image: url(https://i.ibb.co/Ndqcckp9/about-section.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -661,19 +674,19 @@ a .name-logo {
     /* border: 1px solid #ccc; */
 }
 .partner-logo{
-    background-image: url(../assets/images/econet-logo.png);
+    background-image: url(https://i.ibb.co/Dg7pr7Yg/econet-logo.png);
 }
 .partner-logo-2{
-    background-image: url(../assets/images/cbz-bank-logo.jpg);
+    background-image: url(https://i.ibb.co/bj38Vtz4/cbz-bank-logo.jpg);
 }
 .partner-logo-3{
-    background-image: url(../assets/images/money-transfer.png);
+    background-image: url(https://i.ibb.co/xq8pvJFQ/money-transfer.png);
 }
 .partner-logo-4{
-    background-image: url(../assets/images/posb-logo.png);
+    background-image: url(https://i.ibb.co/Q7W3BC69/posb-logo.png);
 }
 .partner-logo-5{
-    background-image: url(../assets/images/zb-logo.jpg);
+    background-image: url(https://i.ibb.co/cKd1R1QY/zb-logo.jpg);
 }
 .partner-logo-6{
     background-image: url(../assets/images/ecocash-logo);
@@ -716,7 +729,7 @@ a .name-logo {
 .contact-image{
     width: 100%;
     height: 50vh;
-    background-image: url(../assets/images/contact-background.jpg);
+    background-image: url(https://i.ibb.co/DgWpkCxY/contact-background.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -829,7 +842,7 @@ a .name-logo {
     width: 100px;
     height: 100px;
     background-color: rgb(255, 255, 255);
-    background-image: url(../assets/images/logo.png);
+    background-image: url(https://i.ibb.co/mrSKhYVm/logo.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

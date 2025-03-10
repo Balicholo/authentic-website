@@ -129,3 +129,25 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   });
+
+// SCROLL REVEAL ANIMATION
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 1000,
+  delay: 200,
+  reset: true 
+  // animations repeat
+})
+
+sr.reveal(`.contact-wrapper`)
+sr.reveal(`.footer-wrapper`, {origin: 'bottom'})
+sr.reveal(`.hero-contents, .testimonial-heading, .contacts`, {origin: 'left'})
+sr.reveal(`.about-img`, {origin: 'right'})
+sr.reveal(`.product, .partner-logo, .partner-logo-2, .partner-logo-3, .partner-logo-4, .partner-logo-5, .partner-logo-6`, {interval: 200})
+// COROUSEL
+
+window.addEventListener('load', () => {
+const preloader = document.getElementById('preloader');
+preloader.style.display = 'none';
+});
