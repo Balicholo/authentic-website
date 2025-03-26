@@ -12,6 +12,8 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
     <link rel="stylesheet" href="./css/finance.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <!-- <link rel="stylesheet" href="./home.html"> -->
     <!-- SWIPER.JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -20,7 +22,7 @@
 <body>
     <nav>
         <div class="navbar">
-            <a href="./home.html"><div class="nav-logo"></div></a>
+            <a href="./index.html"><div class="nav-logo"></div></a>
         
             <ul class="nav-links">
                 <li><a href="#hero-section">Home</a></li>
@@ -59,6 +61,152 @@
         </div>
       </div>
     </section>
+
+    <section id="form-section">
+      <div class="form-container">
+        <div class="form-section">
+            <form id="financial-form">
+                <div class="form-header">
+                    <h1>Authentic Financial</h1>
+                    <p>Fill your details below</p>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full name">
+                    <p class="error-message" id="fullName-error">Full name is required</p>
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone number">
+                    <p class="error-message" id="phoneNumber-error">Please enter a valid phone number</p>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" class="form-control" id="emailAddress" name="emailAddress" placeholder="Email Address">
+                    <p class="error-message" id="emailAddress-error">Please enter a valid email address</p>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" id="idNumber" name="idNumber" placeholder="ID number">
+                    <p class="error-message" id="idNumber-error">ID number is required</p>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" id="billNumber" name="billNumber" placeholder="Bill number">
+                    <p class="error-message" id="billNumber-error">Bill number is required</p>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" id="billName" name="billName" placeholder="Bill name">
+                    <p class="error-message" id="billName-error">Bill name is required</p>
+                </div>
+                
+                <div class="file-upload">
+                    <div class="drop-area" id="drop-area">
+                      <i class="ri-upload-cloud-2-line"></i>
+                        <p>Add proof of Payment here</p>
+                        <p class="small-text">Files supported: JPG, PNG, GIF</p>
+                        <p class="small-text">or</p>
+                        <button type="button" class="browse-btn" id="browse-btn">Browse Files</button>
+                        <p class="small-text">Maximum size: 2MB</p>
+                        <input type="file" class="file-input" id="file-input" multiple accept=".jpg,.jpeg,.png,.gif">
+                    </div>
+                    
+                    <div class="file-preview" id="file-preview"></div>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+            </form>
+            
+            <div class="success-message" id="success-message">
+                <div class="success-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <h2>Form Submitted Successfully!</h2>
+                <p>Thank you for submitting your information.</p>
+            </div>
+        </div>
+        
+        <div class="image-section">
+          <img src="https://i.ibb.co/RTTNVC1W/aunthentic.jpg" alt="aunthentic">
+        </div>
+    </div>
+    </section>
+
+    <section id="services-section">
+      <div class="services-wrapper">
+        <div class="services-heading">
+          <p class="about-heading intro-heading">Our Services</p>
+          <div class="main-divider">
+            <h1 class="service-title">Reach out to us,<br>for assistance</h1>
+            <!-- <div class="divider frequent-divider"></div> -->
+        </div>
+        </div>
+
+<!-- Swiper Container -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="service-card">
+        <p class="card-num">01.</p>
+        <p class="card-heading">Groceries & Beverages</p>
+        <p class="card-text">Stock up on fresh produce, household essentials, and refreshing drinks.</p>
+      </div>
+    </div>
+    
+    <div class="swiper-slide">
+      <div class="service-card">
+        <p class="card-num">02.</p>
+        <p class="card-heading">Airtime & ICT Products Wholesalers</p>
+        <p class="card-text">Get airtime top-ups and bulk ICT products at competitive rates.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="service-card">
+        <p class="card-num">03.</p>
+        <p class="card-heading">EcoCash & Banking Services</p>
+        <p class="card-text">Fast and secure mobile money and banking transactions.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="service-card">
+        <p class="card-num">04.</p>
+        <p class="card-heading">Cash Deposits</p>
+        <p class="card-text">Deposit your cash safely and instantly with Authentic</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="service-card">
+        <p class="card-num">05.</p>
+        <p class="card-heading">School Fees Payments</p>
+        <p class="card-text">Fast and secure mobile money and banking transactions.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="service-card">
+        <p class="card-num">06.</p>
+        <p class="card-heading">Financial Services</p>
+        <p class="card-text">Cash Withdrawals, Tertiary Fees, Coucil Payments, Zesa Tokens, Zimra Payments, E.t.c</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Navigation -->
+  <!-- <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div> -->
+  
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+      </div>
+    </section>
+
     <section id="about-financials">
         <div class="container">
             <!-- Main Card -->
@@ -234,78 +382,24 @@
         </a>
       </div>
     </section>
-    <section id="form-section">
-      <div class="form-container">
-        <div class="form-section">
-            <form id="financial-form">
-                <div class="form-header">
-                    <h1>Authentic Financial</h1>
-                    <p>Fill your details below</p>
-                </div>
-                
-                <div class="form-group">
-                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full name">
-                    <p class="error-message" id="fullName-error">Full name is required</p>
-                </div>
-                
-                <div class="form-group">
-                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone number">
-                    <p class="error-message" id="phoneNumber-error">Please enter a valid phone number</p>
-                </div>
-                
-                <div class="form-group">
-                    <input type="email" class="form-control" id="emailAddress" name="emailAddress" placeholder="Email Address">
-                    <p class="error-message" id="emailAddress-error">Please enter a valid email address</p>
-                </div>
-                
-                <div class="form-group">
-                    <input type="text" class="form-control" id="idNumber" name="idNumber" placeholder="ID number">
-                    <p class="error-message" id="idNumber-error">ID number is required</p>
-                </div>
-                
-                <div class="form-group">
-                    <input type="text" class="form-control" id="billNumber" name="billNumber" placeholder="Bill number">
-                    <p class="error-message" id="billNumber-error">Bill number is required</p>
-                </div>
-                
-                <div class="form-group">
-                    <input type="text" class="form-control" id="billName" name="billName" placeholder="Bill name">
-                    <p class="error-message" id="billName-error">Bill name is required</p>
-                </div>
-                
-                <div class="file-upload">
-                    <div class="drop-area" id="drop-area">
-                      <i class="ri-upload-cloud-2-line"></i>
-                        <p>Add proof of Payment here</p>
-                        <p class="small-text">Files supported: JPG, PNG, GIF</p>
-                        <p class="small-text">or</p>
-                        <button type="button" class="browse-btn" id="browse-btn">Browse Files</button>
-                        <p class="small-text">Maximum size: 2MB</p>
-                        <input type="file" class="file-input" id="file-input" multiple accept=".jpg,.jpeg,.png,.gif">
-                    </div>
-                    
-                    <div class="file-preview" id="file-preview"></div>
-                </div>
-                
-                <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
-            </form>
-            
-            <div class="success-message" id="success-message">
-                <div class="success-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                </div>
-                <h2>Form Submitted Successfully!</h2>
-                <p>Thank you for submitting your information.</p>
-            </div>
+
+    <section id="about-section">
+      <div class="products-icons">
+        <div class="product first">
+          <i class="ri-lightbulb-line"></i>
+         <p class="product-heading">VISION</p>
+         <p>To be the preferred provider of  affordable, genuine products, to the diversified African communities, ensuring sustainable community development and eradication of poverty.</p>
         </div>
         
-        <div class="image-section">
-          <img src="https://i.ibb.co/RTTNVC1W/aunthentic.jpg" alt="aunthentic">
-        </div>
-    </div>
+
+          <div class="product last">
+            <i class="ri-focus-2-line"></i>
+            <p class="product-heading">MISSION </p>
+            <p>Our story is all about the impact clients and communities can get and the progress they can make, through innovative processing and selling of genuine products and services that nurture returns, rewards and value creation, to the African Communities.</p>
+          </div>
+      </div>
     </section>
+
     <footer>
       <div class="footer-container">
        <div class="footer-wrapper">
