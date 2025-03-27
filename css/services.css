@@ -54,7 +54,7 @@
     font-size: 15px;
     color: rgb(92, 92, 92);
     font-weight: 600;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .card-text{
     font-size: 13px;
@@ -70,7 +70,7 @@
 }
 .swiper-container {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 20px 0 50px 0;
     overflow: hidden;

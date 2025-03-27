@@ -15,15 +15,14 @@ html{
 #hero-section{
     width: 100%;
     height: 100vh;
-    background-image: url(https://i.ibb.co/PsdDHMt3/finance.jpg);
+    background-image: url(https://i.ibb.co/23x3jNtG/african-man-shirt-paying-goods-internet-using-credit-card-cell-phone.jpg);
     background-position: center;
     background-size: cover;
 }
 .filter{
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 77, 19, 0.384);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.288);
     position: relative;
 }
 nav {
@@ -947,6 +946,65 @@ textarea:focus::placeholder {
 
 .success-message p {
   color: #6b7280;
+}
+/* CONTACTS */
+.contact-info-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contacts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-left: 1px solid rgb(228, 228, 228);
+  width: 300px;
+}
+.contacts:first-child{
+  border: none;
+}
+.contacts{
+  @media (max-width:899px) {
+      border: none;
+  }
+}
+.contacts p{
+  font-size: 13px;
+  margin: 0;
+  text-align: center;
+  color: rgb(124, 124, 124);
+}
+.contacts i{
+  font-size: 30px;
+  color: rgb(14, 105, 42);
+  margin: 0;
+}
+.contacts a{
+text-decoration: none;
+font-weight: 600;
+color: rgb(14, 105, 42);
+text-align: center;
+}
+.contacts a p{
+  color: rgb(14, 105, 42);
+}
+#location-section {
+  width: 100%;
+  height: 50vh; /* Full height of the section */
+  position: relative;
+  overflow: hidden; /* Prevent any overflow issues */
+}
+
+#location-section iframe {
+  width: 100%; /* Full width of the section */
+  height: 100%; /* Full height of the section */
+  border: 0; /* Removes the iframe border */
+  display: block; /* Ensures no gaps */
 }
 
 /* FOOTER */

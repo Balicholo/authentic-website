@@ -35,7 +35,7 @@ const swiper = new Swiper('.swiper', {
 document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".swiper-container", {
     slidesPerView: 1,
-    spaceBetween: 45,
+    spaceBetween: 45, // CHANGED FROM 45
     loop: true,
     centeredSlides: true,
     autoplay: {
@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       640: {
-        slidesPerView: 3,
+        slidesPerView: 3, // CHANGED FROM 3
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 3, // CHANGED FROM 4
       },
     },
     effect: "coverflow",
