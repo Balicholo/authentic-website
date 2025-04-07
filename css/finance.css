@@ -163,6 +163,13 @@ nav {
     align-items: center;
     padding: 30px;
 }
+.hero-contents{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .welcome-text{
     color: white;
     background-color: rgb(14, 105, 42);
@@ -192,6 +199,9 @@ nav {
         font-size: 30px;
         line-height: 35px;
     }
+}
+.financial-heading{
+  text-align: center;
 }
 /* .hero-sub-heading{
     margin: 0;
@@ -657,7 +667,9 @@ a .swiper-slide{
 
 /* FORM-SECTION */
 #form-section {
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #005c29, #00a344, #004d20);
+  background-size: 300% 300%;
+  animation: gradient-animation 8s ease infinite;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -676,6 +688,7 @@ a .swiper-slide{
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  margin-top: 100px; /* Adjusted margin for better spacing */
 }
 
 @media (min-width: 768px) {
